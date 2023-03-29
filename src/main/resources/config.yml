@@ -1,4 +1,4 @@
-# # Prefix of the plugin for all messages using MiniMessage
+# Prefix of the plugin for all messages using MiniMessage
 # MiniMessage docs: https://docs.advntr.dev/minimessage/format.html
 prefix: "<dark_gray>[<gradient:#b92b27:#1565C0><bold>Dodgeball</bold></gradient><dark_gray>] "
 
