@@ -8,15 +8,24 @@ The objective of dodgeball is to eliminate all players of the opposing team by t
 Players are not allowed to cross the line in the middle of the court. 
 
 Notes: 
-    • Snowballs are the balls in this game. When the snowballs land, spawn another snowball where it landed. When a player is hit with a snowball, they are out. 
-    • Has placeholders (placeholderAPI) that can be used in other configurations to track how many players are alive on both sides. 
-    • A pregame lobby function is included. 
-    • Has customizable commands on victory in the config. 
+    • Snowballs are the balls in this game. When they land another snowball spawns where it landed. 
+    • When a player is hit with a snowball or touches the tape (obsidian), they are out.  
+    • Customizable commands on victory/loss are available in the config. 
 
 ## Arena System
 Support for multiple games at once as the arenas spawn in different areas of the dodgeball world. 
-A lobby and arena are provided by default in the plugin folder. You may replace them with any schematics of the same name and configure their spawn locations. 
+A pre-game lobby and arena are provided by default in the plugin folder. You may replace them with any schematics of the same name and configure their spawn locations. 
 
 ## Placeholders
-%dodgeball_team1_alive% - Returns the number of players alive on team one 
-%dodgeball_team2_alive% - Returns the number of players alive on team two 
+**%dodgeball_team1_alive%** - Returns the number of players alive on team one  
+**%dodgeball_team2_alive%** - Returns the number of players alive on team two 
+
+## Commands and Permissions
+
+| Name                 | Permission       | Usage                                          |
+|----------------------|------------------|------------------------------------------------|
+| /dodgeball create    | dodgeball.create | Creates a new game with any available game ID. |
+| /dodgeball join (id) | dodgeball.join   | Joins a game with the specified game ID.       |
+| /dodgeball leave     | dodgeball.leave  | Leaves the game that you're currently in.      |
+| /dodgeball reload    | dodgeball.reload | Reloads the config.yml file.                   |
+| /dodgeball help      | dodgeball.help   | Shows the help menu.                           |
