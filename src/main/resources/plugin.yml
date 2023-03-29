@@ -1,0 +1,31 @@
+name: Dodgeball
+version: '${version}'
+main: dev.magnetite.dodgeball.Dodgeball
+api-version: 1.19
+
+depend: ["FastAsyncWorldEdit"]
+softdepend: ["PlaceholderAPI"]
+
+commands:
+  dodgeball:
+    default: true
+
+permissions:
+  dodgeball.reload:
+    default: op
+  dodgeball.create:
+    default: true
+  dodgeball.join:
+    default: true
+  dodgeball.leave:
+    default: true
+  dodgeball.help:
+    default: true
+  dodgeball.*:
+    default: op
+    children:
+      dodgeball.reload: true
+      dodgeball.create: true
+      dodgeball.join: true
+      dodgeball.leave: true
+      dodgeball.help: true

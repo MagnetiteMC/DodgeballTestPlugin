@@ -1,0 +1,50 @@
+# # Prefix of the plugin for all messages using MiniMessage
+# MiniMessage docs: https://docs.advntr.dev/minimessage/format.html
+prefix: "<dark_gray>[<gradient:#b92b27:#1565C0><bold>Dodgeball</bold></gradient><dark_gray>] "
+
+game-options:
+  team-one-name: "Red"
+  team-two-name: "Blue"
+
+  min-players: 2 # Small number of players for testing purposes
+  max-players: 20
+
+  # Amount of dodgeballs each player starts with
+  dodgeball-amount: 3
+  # Time in seconds before the game starts
+  countdown: 10
+
+# Coordinate offset of the lobby spawn
+lobby-spawn:
+  x: 0
+  y: 0
+  z: 1
+  yaw: 180
+  pitch: 0
+
+# Coordinate offset of Team One spawn
+team-one-spawn:
+  x: -1
+  y: 0
+  z: 10
+  yaw: 0
+  pitch: 0
+
+# Coordinate offset of Team Two spawn
+team-two-spawn:
+  x: -1
+  y: 0
+  z: 33
+  yaw: 180
+  pitch: 0
+
+# Commands ran when the game ends
+# %player% is replaced with the player's name
+game-end-commands:
+  # Commands ran for the Winning Team
+  winners:
+    - "give %player% diamond 16"
+    - "give %player% gold_ingot 16"
+  # Commands ran for the Losing Team
+  losers:
+    - "give %player% coal 1"
